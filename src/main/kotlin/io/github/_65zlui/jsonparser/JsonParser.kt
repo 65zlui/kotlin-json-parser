@@ -1,3 +1,5 @@
+package io.github._65zlui.jsonparser
+
 class JsonParser(private val lexer: JsonLexer) {
     private var currentToken: Token = lexer.nextToken() // The current token being processed
 

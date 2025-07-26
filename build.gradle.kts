@@ -49,6 +49,9 @@ application {
 // 7. 打包可执行 Jar (可选，如果你想生成一个独立的运行文件)
 // 这个任务会创建一个包含所有依赖的可执行 JAR 文件。
 tasks.jar {
+    // 处理重复文件条目的策略，这里设置为排除重复的
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE // <-- 新增这一行
+
     manifest {
         attributes["Main-Class"] = "MainKt"
     }
@@ -61,7 +64,8 @@ tasks.jar {
 // 9. (可选) 源代码和 KDoc Jar - 任务定义
 // 这会创建包含源代码和 KDoc 文档的 JAR 包，方便其他开发者查看源码和文档。
 tasks.withType<Jar>().configureEach {
-    if (name == "jar") { // 确保只对主 JAR 任务进行配置
+    // 确保只对主 JAR 任务进行配置，并且不影响 sourcesJar 等
+    if (name == "jar") {
         // 为主 JAR 任务添加源文件
         from(sourceSets.main.get().allSource)
     }
@@ -95,9 +99,9 @@ publishing {
 
             // 定义 Group ID, Artifact ID, Version (GAV 坐标)
             // 这是其他项目引用你的库时需要的信息
-            groupId = "com.65zlui.jsonparser" // 替换为你的公司或项目的 Group ID
+            groupId = "io.github._65zlui.jsonparser" // 替换为你的公司或项目的 Group ID
             artifactId = "kotlin-json-parser"      // 替换为你的库的 Artifact ID
-            version = "1.0.0"                      // 替换为你的库的版本
+            version = "1.0.1"                      // 替换为你的库的版本
 
             // 将源代码 JAR 和 KDoc JAR 添加到发布物中
             artifact(tasks.named<Jar>("sourcesJar")) // <-- 修正了这里
@@ -112,7 +116,7 @@ publishing {
             // GitHub Packages 的 URL 格式：https://maven.pkg.github.com/OWNER/REPOSITORY
             // OWNER 是你的 GitHub 用户名或组织名
             // REPOSITORY 是你的 GitHub 仓库名
-            url = uri("https://maven.pkg.github.com/65zlui/YOUR_REPO_NAME") // <-- 替换为你的 GitHub 用户名和仓库名
+            url = uri("https://maven.pkg.github.com/65zlui/kotlin-json-parser") // <-- 替换为你的 GitHub 用户名和仓库名
 
             // 认证信息：使用 GitHub 用户名和 Personal Access Token (PAT)
             // 这些信息应该从 gradle.properties 中读取，而不是硬编码

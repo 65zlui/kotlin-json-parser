@@ -68,7 +68,7 @@ Add the following dependency to the dependencies block of your build.gradle.kts 
 // build.gradle.kts
 
 dependencies {  
-    implementation("com.65zlui.jsonparser:kotlin-json-parser:1.0.0")  
+    implementation("io.github.\_65zlui.jsonparser:kotlin-json-parser:1.0.1")   
 }
 
 **Groovy DSL (build.gradle)**:
@@ -76,13 +76,13 @@ dependencies {
 // build.gradle
 
 dependencies {  
-    implementation 'com.65zlui.jsonparser:kotlin-json-parser:1.0.0'  
+    implementation 'io.github.\_65zlui.jsonparser:kotlin-json-parser:1.0.1'
 }
 
 ## **Example Usage**
 
-import com.65zlui.jsonparser.Json  
-import com.65zlui.jsonparser.JsonValue
+import io.github.\_65zlui.jsonparser.Json  
+import io.github.\_65zlui.jsonparser.JsonValue
 
 fun main() {  
     val jsonString \= """  
@@ -133,19 +133,22 @@ If you are a developer of this library and wish to build, run, or publish it:
 
 Ensure your project structure is as follows:
 
+
+
 kotlin-json-parser/  
 ├── build.gradle.kts  
 └── src/  
     └── main/  
         └── kotlin/  
-            ├── JsonParseException.kt  
-            ├── TokenType.kt  
-            ├── Token.kt  
-            ├── JsonValue.kt  
-            ├── JsonLexer.kt  
-            ├── JsonParser.kt  
-            ├── Json.kt  
-            └── Main.kt
+            └── io/github/\_65zlui/jsonparser/  
+                ├── JsonParseException.kt  
+                ├── TokenType.kt  
+                ├── Token.kt  
+                ├── JsonValue.kt  
+                ├── JsonLexer.kt  
+                ├── JsonParser.kt  
+                ├── Json.kt  
+                └── Main.kt
 
 ### **Gradle Configuration**
 

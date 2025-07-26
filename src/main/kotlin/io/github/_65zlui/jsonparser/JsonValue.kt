@@ -1,3 +1,5 @@
+package io.github._65zlui.jsonparser
+
 sealed class JsonValue {
     /** Represents a JSON object, a map of string keys to JsonValue. */
     data class JsonObject(val members: Map<String, JsonValue>) : JsonValue()

@@ -1,3 +1,5 @@
+package io.github._65zlui.jsonparser
+
 object Json {
     /**
      * Parses the given JSON string into a JsonValue object.

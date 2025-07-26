@@ -1,3 +1,5 @@
+package io.github._65zlui.jsonparser
+
 enum class TokenType {
     CURLY_OPEN,      // {
     CURLY_CLOSE,     // }

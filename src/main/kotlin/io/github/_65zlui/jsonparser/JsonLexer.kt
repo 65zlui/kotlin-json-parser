@@ -1,3 +1,5 @@
+package io.github._65zlui.jsonparser
+
 class JsonLexer(private val jsonString: String) {
     private var position = 0 // Current reading position in the string
 
