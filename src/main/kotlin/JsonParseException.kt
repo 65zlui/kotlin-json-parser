@@ -1,0 +1,1 @@
+class JsonParseException(message: String) : RuntimeException(message)
