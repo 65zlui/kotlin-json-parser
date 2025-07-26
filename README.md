@@ -31,7 +31,7 @@ repositories {
     mavenCentral()  
     maven {  
         name \= "GitHubPackages"  
-        url \= uri("https://maven.pkg.github.com/YOUR\_GITHUB\_USERNAME/YOUR\_REPO\_NAME")  
+        url \= uri("https://maven.pkg.github.com/65zlui/kotlin-json-parser")  
         // If your package is public, the credentials block is usually not needed.  
         // If it's a private package, authentication information is required (e.g., via gpr.user and gpr.key in \~/.gradle/gradle.properties).  
         credentials {  
@@ -49,7 +49,7 @@ repositories {
     mavenCentral()  
     maven {  
         name 'GitHubPackages'  
-        url "https://maven.pkg.github.com/YOUR\_GITHUB\_USERNAME/YOUR\_REPO\_NAME"  
+        url "https://maven.pkg.github.com/65zlui/kotlin-json-parser"  
         // If your package is public, the credentials block is usually not needed.  
         // If it's a private package, authentication information is required.  
         credentials {  
