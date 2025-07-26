@@ -31,7 +31,7 @@ repositories {
     mavenCentral()  
     maven {  
         name \= "GitHubPackages"  
-        url \= uri("https://maven.pkg.github.com/YOUR\_GITHUB\_USERNAME/YOUR\_REPO\_NAME")  
+        url \= uri("https://maven.pkg.github.com/65zlui/kotlin-json-parser")  
         // 如果你的包是公共的，通常不需要 credentials 块  
         // 如果是私有包，需要配置认证信息 (例如通过 \~/.gradle/gradle.properties 中的 gpr.user 和 gpr.key)  
         credentials {  
@@ -49,7 +49,7 @@ repositories {
     mavenCentral()  
     maven {  
         name 'GitHubPackages'  
-        url "https://maven.pkg.github.com/YOUR\_GITHUB\_USERNAME/YOUR\_REPO\_NAME"  
+        url "https://maven.pkg.github.com/65zlui/kotlin-json-parser"  
         // 如果你的包是公共的，通常不需要 credentials 块  
         // 如果是私有包，需要配置认证信息  
         credentials {  
