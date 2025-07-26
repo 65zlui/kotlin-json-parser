@@ -136,7 +136,7 @@ If you are a developer of this library and wish to build, run, or publish it:
 ### **Project Structure**
 
 Ensure your project structure is as follows:
-
+```
 kotlin-json-parser/  
 ├── build.gradle.kts  
 └── src/  
@@ -152,6 +152,7 @@ kotlin-json-parser/
                 ├── Json.kt  
                 └── Main.kt
 
+```
 ### **Gradle Configuration**
 
 The build.gradle.kts file contains all necessary configurations, including the Kotlin JVM plugin, application plugin, and Maven Publish plugin, as well as GitHub Packages publishing settings.
