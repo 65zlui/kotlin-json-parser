@@ -76,13 +76,13 @@ dependencies {
 // build.gradle
 
 dependencies {  
-    implementation 'io.github.\_65zlui.jsonparser:kotlin-json-parser:1.0.1'
+    implementation 'io.github.\_65zlui.jsonparser:kotlin-json-parser:1.0.1' 
 }
 
 ## **Example Usage**
 
-import io.github.\_65zlui.jsonparser.Json  
-import io.github.\_65zlui.jsonparser.JsonValue
+import com.65zlui.jsonparser.Json  
+import com.65zlui.jsonparser.JsonValue
 
 fun main() {  
     val jsonString \= """  
@@ -140,15 +140,14 @@ kotlin-json-parser/
 └── src/  
     └── main/  
         └── kotlin/  
-            └── io/github/\_65zlui/jsonparser/  
-                ├── JsonParseException.kt  
-                ├── TokenType.kt  
-                ├── Token.kt  
-                ├── JsonValue.kt  
-                ├── JsonLexer.kt  
-                ├── JsonParser.kt  
-                ├── Json.kt  
-                └── Main.kt
+            ├── JsonParseException.kt  
+            ├── TokenType.kt  
+            ├── Token.kt  
+            ├── JsonValue.kt  
+            ├── JsonLexer.kt  
+            ├── JsonParser.kt  
+            ├── Json.kt  
+            └── Main.kt
 
 ### **Gradle Configuration**
 

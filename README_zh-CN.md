@@ -76,7 +76,7 @@ dependencies {
 // build.gradle
 
 dependencies {  
-    implementation 'io.github.\_65zlui.jsonparser:kotlin-json-parser:1.0.1'  
+    implementation 'io.github.\_65zlui.jsonparser:kotlin-json-parser:1.0.1'
 }
 
 ## **示例用法**
