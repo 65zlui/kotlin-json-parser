@@ -132,7 +132,7 @@ fun main() {
 ### **项目结构**
 
 确保你的项目结构如下：
-
+```
 kotlin-json-parser/  
 ├── build.gradle.kts  
 └── src/  
@@ -147,6 +147,7 @@ kotlin-json-parser/
                 ├── JsonParser.kt  
                 ├── Json.kt  
                 └── Main.kt
+```
 
 ### **Gradle 配置**
 
